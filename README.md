@@ -100,7 +100,7 @@ print(f"F-statistic: {F_statistic:.2f}, p-value: {p_value:.4e}")
 * Null Hypothesis (H₀): All age groups have the same mean spending score.
 * Alternative Hypothesis (H₁): At least one age group’s mean spending score differs.
 > Welch ANOVA produces F = 20.40, p = 1.51 × 10e−11 < 0.05, thus we Reject H₀.
-<img width="400" height="300" alt="age_vs_spending_boxplot" src="https://github.com/user-attachments/assets/86410dfd-06c6-484e-8441-df20577e8f44" />
+<p align="center"><img width="600" height="510" alt="age_vs_spending_boxplot" src="https://github.com/user-attachments/assets/86410dfd-06c6-484e-8441-df20577e8f44" />
 
 > Clearly, spending behavior is not uniform across age demographics. Younger and middle-aged cohorts display higher purchasing enthusiasm, suggesting these segments should receive targeted engagement campaigns. This allows K-Means to recognize age-structured purchasing archetypes rather than treating all customers as behaviorally identical.
 ---
@@ -152,7 +152,7 @@ plt.grid(True)
 plt.show()
 ```
 >k-means++ initialization prevents poor centroid placement and speeds up convergence; inertia measures the total WCSS; and the “elbow” point (where the rate of WCSS decline sharply flattens) indicates a good trade-off between model simplicity and accuracy.
-<img width="1312" height="721" alt="eee64fc60216ae87f3e56f101fd69226" src="https://github.com/user-attachments/assets/c16e4c26-c55a-4142-abba-78216001802b" />
+<p align="center"><img width="1312" height="721" alt="eee64fc60216ae87f3e56f101fd69226" src="https://github.com/user-attachments/assets/c16e4c26-c55a-4142-abba-78216001802b" />
 
 >Before k = 5, the inertia decreases rapidly, while after k = 5, the decline becomes much more gradual. The elbow point appears around k = 5, suggesting that five clusters provide a good balance between model interpretability and performance.
 
@@ -182,7 +182,7 @@ ax.set_title('3D Visualization of Customer Segments')
 ax.legend()
 plt.show()
 ```
-<img width="843" height="765" alt="image" src="https://github.com/user-attachments/assets/c080260e-73d3-4df3-a354-481aee97d1aa" />
+<p align="center"><img width="843" height="765" alt="image" src="https://github.com/user-attachments/assets/c080260e-73d3-4df3-a354-481aee97d1aa" />
 
 ### 2D Pairwise Cluster Views
 To analyze relationships between individual features, we visualize 2D projections:
@@ -209,7 +209,7 @@ plot_2d(2, 1, "Binned Age", "Spending Score", "Age Group vs. Spending")
 ```
 
 These 2D views provide a clearer picture of how each variable influences clustering boundaries. 
-<img width="465" height="406" alt="image" src="https://github.com/user-attachments/assets/76e93332-e3e5-4bf6-99f8-3690ddced984" />
+<p align="center"><img width="698" height="609" alt="image" src="https://github.com/user-attachments/assets/76e93332-e3e5-4bf6-99f8-3690ddced984" />
 
 >The “Income vs. Spending” view often provides the clearest separation between segments. K-Means successfully partitions the population into five behaviorally coherent segments, offering actionable insights.
 
