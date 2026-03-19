@@ -2,7 +2,7 @@
 
 ---
 
-## Summary
+## --Summary--!
 
 This project explores **mall customer behavior** using a retail dataset. Key contributions are as follow:
 - **Test associations** among demographics, income, and spending with χ² tests, Pearson correlation, Levene tests, and one-way ANOVA.  
